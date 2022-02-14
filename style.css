@@ -1,0 +1,75 @@
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(29, 28, 28);
+    font-family: 'Roboto Serif', sans-serif;
+    background-image: url('https://source.unsplash.com/user/erondu/1600x900');
+    font-size: 120%;
+}
+.card{
+    background-color: #070202;
+    color: aliceblue;
+    padding: 2em;
+    border-radius: 30px;
+    width: 420px;
+    margin: 1em;
+}
+
+.search
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 2e;
+    border: none;
+    margin: 0.5em;
+    border-radius: 50%;
+    height: 2.5em;
+    outline: none;
+    background: #7c7c7c;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 18px;
+    background: #7c7c7c;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+}
+
+h1.tmep {
+    margin: 0;
+}
+
+.description
+{
+    text-transform: capitalize;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+
+}
